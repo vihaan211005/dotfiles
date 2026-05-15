@@ -1,0 +1,238 @@
+{
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        },
+        "fonts_config": {
+            "fonts": [
+                "noto-fonts",
+                "noto-fonts-emoji",
+                "noto-fonts-cjk"
+            ]
+        }
+    },
+    "archinstall_language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Systemd-boot",
+        "removable": false,
+        "uki": true
+    },
+    "custom_commands": [],
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot",
+                            "esp"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "f560e33b-ecd5-4f4a-804d-d017f2d5cde3",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "eee9ad5a-569d-48c1-a97e-6461ea4d78e9",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 32
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "linux-home"
+                        ],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/home",
+                        "obj_id": "6a4366f7-8940-417e-99f8-583873fca60e",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 220624584704
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 35434528768
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "hostname": "lappy",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "console_font": "default8x16",
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "India": [
+                "http://in.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://in.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://mirror.maa.albony.in/archlinux/$repo/os/$arch",
+                "http://mirror.sahil.world/archlinux/$repo/os/$arch",
+                "https://mirror.sahil.world/archlinux/$repo/os/$arch",
+                "http://mirrors.nxtgen.com/archlinux-mirror/$repo/os/$arch",
+                "https://mirrors.nxtgen.com/archlinux-mirror/$repo/os/$arch",
+                "https://mirrors.abhy.me/archlinux/$repo/os/$arch",
+                "http://mirror.4v1.in/archlinux/$repo/os/$arch",
+                "https://mirror.4v1.in/archlinux/$repo/os/$arch",
+                "https://in.arch.niranjan.co/$repo/os/$arch",
+                "http://mirrors.saswata.cc/archlinux/$repo/os/$arch",
+                "https://mirrors.saswata.cc/archlinux/$repo/os/$arch",
+                "https://archlinux.kushwanthreddy.com/$repo/os/$arch",
+                "https://mirror.dawn.org.in/arch/$repo/os/$arch",
+                "https://mirror.bom.kat.cx/archlinux/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": []
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+	    "acpi",
+	    "alacritty",
+	    "base-devel",
+	    "blueman",
+	    "brightnessctl",
+	    "btop",
+	    "code",
+	    "dunst",
+	    "fd",
+	    "feh",
+	    "firefox",
+	    "fish",
+	    "fzf",
+	    "git",
+	    "glow",
+	    "i3-wm",
+	    "i3blocks",
+	    "i3lock",
+	    "inetutils",
+	    "jq",
+	    "libnotify",
+	    "ly",
+	    "maim",
+	    "man-db",
+	    "man-pages",
+	    "neovim",
+	    "network-manager-applet",
+	    "openfortivpn",
+	    "openssh",
+	    "pavucontrol",
+	    "picom",
+	    "playerctl",
+	    "proton-vpn-cli",
+	    "qbittorrent",
+	    "ripgrep",
+	    "rofi",
+	    "rsync",
+	    "stow",
+	    "tmux",
+	    "ttf-hack-nerd",
+	    "unzip",
+	    "upower",
+	    "vlc",
+	    "vlc-plugins-all",
+	    "wget",
+	    "xclip",
+	    "xdg-utils",
+	    "xorg-server",
+	    "xorg-xauth",
+	    "xorg-xinput",
+	    "xorg-xrandr",
+	    "xss-lock",
+	    "yazi",
+	    "zip"
+    ],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
+    },
+    "profile_config": {
+        "gfx_driver": null,
+        "greeter": null,
+        "profile": {
+            "custom_settings": {},
+            "details": [],
+            "main": "Minimal"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
+    "timezone": "Asia/Calcutta",
+    "version": "4.4"
+}
